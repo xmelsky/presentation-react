@@ -63,7 +63,7 @@ span.underline {
   flex-direction: column;
 }
 
-span.red {
+span.green {
   border-color: var(--var-main-color);
 }
 
@@ -144,4 +144,68 @@ img.photo {
 
 .reveal ul li {
   color: #fff;
+}
+
+.reveal section img {
+  margin: 15px 0px;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.reveal pre code {
+  overflow: hidden;
+}
+
+.code-header {
+  color: #fff;
+  background: #016071;
+  padding: 5px 10px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.reveal .hljs:not(:first-child).fragment.additional {
+  position: relative;
+}
+
+.reveal pre code.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reveal iframe {
+  border: none;
+}
+
+a.main-logo.small {
+  width: 60px;
+  height: 90px;
+}
+
+// Loader
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

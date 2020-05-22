@@ -1,3 +1,54 @@
-section(data-background-iframe='https://pure-dawn-33940.herokuapp.com/?api_key=rs.school.2020Q1&url=https://reactjs.org')
-  span.fragment.fade-in
-    a.fragment.fade-out(href='https://reactjs.org' target="_blank")
+section(data-background-color='#141519')
+  section(data-background-color='#141519')
+    aside.notes
+      p But the main and most powerful feature of React.js is a Reusable Components. So let's dive into it and take a look on some basic concepts.
+
+    div
+      a.main-logo.small(href='https://reactjs.org')
+      h2 Reusable&nbsp;
+        span.color-main Components
+
+  section(data-background-color='#141519')
+      aside.notes
+        p Almost everything in React consists of components, which can be class components or simple components.
+        p Let's recap some code we have seen on previous slides. It's technically nothing wrong with this line of code. Exce[t it's not reusable peice of your future application.
+
+      h3
+        span.color-main React.js&nbsp;
+        span is all about&nbsp;
+        span.color-main Components
+      div.fragment.fade-up
+        pre
+          div.code-header
+            | JSX
+          code.
+            const heading = &lt;h1 className="site-heading"&gt;Hello, React&lt;/h1&gt;
+
+  section(data-background-color='#141519')
+      aside.notes
+        p So we should conver this code into more usable and following React patterns.
+
+      h3
+        span.color-main Convert&nbsp;
+        span to simple but reusable&nbsp;
+        span.color-main Component
+      div.fade-up
+        pre
+          div.code-header
+            | Title.jsx
+          code.javascript.
+            import React from 'react';
+
+            function Title(props) {
+              const {classes, title} = props;
+              return &lt;h1 className={classes.join('')}&gt;{title}&lt;/h1&gt;
+            }
+
+            export default Title;
+
+  section(data-background-iframe='https://codesandbox.io/s/rewrite-to-component-tbpy7')
+    aside.notes
+      p Pay attention please, that since JSX compiles into calls to React.createElement, the React library must also always be in scope from your JSX code.
+    span.fragment.fade-in
+      sapn.fragment.fade-out
+        .lds-dual-ring

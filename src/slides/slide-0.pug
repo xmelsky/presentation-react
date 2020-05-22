@@ -3,7 +3,7 @@ section(data-background-color='#141519')
 
     //- N O T E S
     aside.notes
-      p Before we'll start dig into technical aspects of this library. I'd like to ask you - what is this spimple function doing here? What's the purpose of this code?
+      p Before we'll start dig into technical aspects of this library. I'd like to ask you - what this spimple function doing here? What's the purpose of this code?
       p This is as you sure know a  Framework constructor function which brings to us... a library?!. Obviously this is metaphor. But what it shows you - that this powerful and dynamic library can stand alongside with the real frameworks (instead of jQuery, whitch simply can't do that).
 
     div
@@ -27,7 +27,6 @@ section(data-background-color='#141519')
     div.title-container
       h2 New flexible JavaScript&nbsp;
         span.color-main library
-          //- span.underline.red
     div.info-container
       div.fragment.fade-in
         h4 What does it mean?
@@ -42,19 +41,40 @@ section(data-background-color='#141519')
             ul
               li uses downward data binding to ensure that changes of child structures don’t affect their parents
   section
+
     aside.notes
       | Here we see that React isn't a framework. it's a view layer only. But the design patterns applied by the development team make this library very popular amongst programmers. Today it's over 100.000 stars on github repository. and yeah, it's an open source library! How cool is that?
-    div.fragment.fade-up
+
+    div.fade-up
+      a.main-logo.small(href='https://reactjs.org')
       h2 React is the&nbsp;
         span.color-main view layer&nbsp;
         | of an MVC application
+  section.fade-up
+
+    aside.notes
+      | ReactDevTools is available. Which makes your life substantially better. Yes, it's easy to explore the structure your applications in Virtual DOM. It's an extention for webbrowser (Chrome and Mozilla supports it)
+
+    div
+      h2 React Developer Tools&nbsp;
+        span.underline-bottom is available
+          span.underline.green
+      image(src="images/devtool.png")
   section
-    div.fragment.fade-up
-      h2 New flexible JavaScript&nbsp;
-        span.underline-bottom library
-          span.underline.red
-  section
-    div.fragment.fade-up
-      h2 New flexible JavaScript&nbsp;
-        span.underline-bottom library
-          span.underline.red
+    div.fade-up
+      h2 New syntax -&nbsp;
+        span.color-main JSX
+      p With JSX, we can write what looks like HTML, and also we can create and use our own XML-like tags. Here's what JSX looks like assigned to a variable.
+      p but it worth to mention that JSX just provides syntactic sugar for the React.createElement(component, props, ...children) function
+      p So this JSX under the hood compiles to this noJSX syntax
+      div.fragment.fade-up
+        pre
+          div.code-header
+            | JSX
+          code.
+            const heading = &lt;h1 className="site-heading"&gt;Hello, React&lt;/h1&gt;
+        pre.fragment.fade-up
+          div.code-header
+            | No JSX
+          code.wrap.additional.javascript.
+            const heading = React.createElement('h1', { className: 'site-heading' }, 'Hello, React!');
