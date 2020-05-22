@@ -84,7 +84,7 @@ module.exports = (env) => ({
           loader: 'expose-loader',
           options: 'Reveal',
         },
-      },
+      }
     ],
   },
   plugins: [
@@ -92,9 +92,9 @@ module.exports = (env) => ({
     new CopyPlugin({
       patterns: [
         { from: './src/assets/images', to: 'images' },
-        { from: './node_modules/reveal.js/plugin/highlight/highlight.js', to: 'plugin/highlight/highlight.js' },
         { from: './node_modules/reveal.js/plugin/notes/notes.js', to: 'plugin/notes/notes.js' },
         { from: './node_modules/reveal.js/plugin/notes/notes.html', to: 'plugin/notes/notes.html' },
+        { from: './node_modules/reveal.js/plugin/highlight/highlight.js', to: 'plugin/highlight/highlight.js' },
 
       ],
     }),
