@@ -131,11 +131,15 @@ img.avatar.green {
   justify-content: flex-start;
 }
 
-img.photo {
+div.photo {
+  background-image: url('../assets/images/me.jpg');
   margin: 0 !important;
-  width: 300px;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position-y: 32%;
   border: 0 !important;
-  text-shadow: 1px 2px 5px #222;
+  border-radius: 50%;
 }
 
 .reveal ul {
@@ -181,6 +185,16 @@ img.photo {
 a.main-logo.small {
   width: 60px;
   height: 90px;
+}
+
+code.inline {
+  margin: 0 15px;
+  font-size: 35px;
+  color: deepskyblue;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 // Loader

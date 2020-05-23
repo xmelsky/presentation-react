@@ -5,12 +5,12 @@ document.body.innerHTML = `
 <div class="reveal">
   <div class="slides">
       <!--inject:slides-->
-      <!--inject:order=2,3,0,1,4-->
+      <!--inject:order=2,3,0,1,4,5-->
   </div>
 </div>`;
 
 Reveal.initialize({
-  controls: true,
+  controls: false,
   progress: false,
   touch: true,
   dependencies: [

@@ -23,13 +23,10 @@ module.exports = (env) => ({
         loaders: ['html-loader', 'pug-html-loader'],
       },
       {
-        test: /\.svg$/,
+        test: /\.(png|svg|jpe?g|gif)$/i,
         use: [
           {
-            loader: 'svg-url-loader',
-            options: {
-              limit: 10000,
-            },
+            loader: 'file-loader',
           },
         ],
       },
@@ -91,7 +88,7 @@ module.exports = (env) => ({
 
     new CopyPlugin({
       patterns: [
-        { from: './src/assets/images', to: 'images' },
+        { from: './src/assets', to: 'assets' },
         { from: './node_modules/reveal.js/plugin/notes/notes.js', to: 'plugin/notes/notes.js' },
         { from: './node_modules/reveal.js/plugin/notes/notes.html', to: 'plugin/notes/notes.html' },
         { from: './node_modules/reveal.js/plugin/highlight/highlight.js', to: 'plugin/highlight/highlight.js' },
