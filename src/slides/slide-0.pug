@@ -12,7 +12,7 @@ section(data-background-color='#141519')
     pre
       code.
         function Framework() {
-          return {
+          this.frameworks = {
             library: 'React.js',
           }
         }
@@ -25,7 +25,7 @@ section(data-background-color='#141519')
      p
 
     div.title-container
-      h2 New flexible JavaScript&nbsp;
+      h3 Flexible and Modern JavaScript&nbsp;
         span.color-main library
     div.info-container
       div.fragment.fade-in
@@ -36,7 +36,7 @@ section(data-background-color='#141519')
               li combines the speed of JavaScript and uses a new way of rendering webpages
           div.fragment.fade-up
             ul
-              li makes manipulation with DOM highly dynamic and allows fast response to user input
+              li makes manipulation with DOM highly dynamic and allows fast response to user interaction
           div.fragment.fade-up
             ul
               li uses downward data binding to ensure that changes of child structures don’t affect their parents
@@ -59,7 +59,7 @@ section(data-background-color='#141519')
       h2 React Developer Tools&nbsp;
         span.underline-bottom is available
           span.underline.green
-      image(src="../assets/images/devtool.png")
+      image(src="assets/images/devtool.png")
   section
     aside.notes
       p but it worth to mention that JSX just provides syntactic sugar for the React.createElement(component, props, ...children) function
