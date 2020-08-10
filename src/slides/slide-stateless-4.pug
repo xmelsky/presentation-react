@@ -1,0 +1,84 @@
+section(data-background-color='#141519')
+  section
+    a.main-logo.small(href='https://reactjs.org')
+    h3
+      span.color-main Stateless&nbsp;
+      | and&nbsp;
+      span.color-main Stateful&nbsp;
+      | Components
+  section
+    a.main-logo.small(href='https://reactjs.org')
+    h4
+      span.color-main Stateless&nbsp;
+      | Component
+    ul
+      li.fragment.fade-up
+        | is a simple component, which is a
+        code.inline.
+          function
+      li.fragment.fade-up
+        | doesn't use the
+        code.inline.
+          class
+        |keyword
+      li.fragment.fade-up
+        | gets its
+        code.inline.
+          props
+        |as parameter
+      li.fragment.fade-up
+        | doesn't have a
+        code.inline.
+          state
+        |inside
+  section
+    a.main-logo.small(href='https://reactjs.org')
+    h4
+      span.color-main Stateful&nbsp;
+      | Component
+    ul
+      li.fragment.fade-up
+        | is a
+        code.inline.
+          ES6 class
+        | component, which
+        code.inline.
+          extends
+        | React.Component
+      li.fragment.fade-up
+        | must have at least on method called
+        code.inline.
+          render()
+      li.fragment.fade-up
+        | uses
+        code.inline.
+          this.props property
+        | instead
+      li.fragment.fade-up
+        | could use and update its own
+        code.inline.
+          State
+        | inside
+  section
+    aside.notes
+      p This is the core feature since last major update of React library by Facebook team
+    a.main-logo.small(href='https://reactjs.org')
+    h4
+      span.color-main Stateless&nbsp;
+      | Component&nbsp;
+      span.color-main on steroids&nbsp;
+
+    h4.fragment.fade-up
+      | uses
+      code.inline.
+        HOOKS!
+    ul
+      li.fragment.fade-up
+        | they let you use state and other React features without writing a class
+      li.fragment.fade-up
+        | they keep your code cleaner and your components logic more readable
+      li.fragment.fade-up
+        | they work faster
+  //- section(data-background-iframe='https://codesandbox.io/s/pensive-wescoff-b8420')
+  //-   span.fragment.fade-in
+  //-     a.fragment.fade-out(href='https://reactjs.org' target="_blank")
